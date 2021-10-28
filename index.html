@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+   
+    <link rel="stylesheet" href="style.css" />
+    <title>Postres</title>
+  </head>
+  <body>
+
+    
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span class="logo fw-bold">Postres</span><span class="punto">.</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item d-flex">
+                <a class="nav-link active text-dark" href="#">Inicio</a>
+              </li>
+              <li class="nav-item d-flex">
+                <a class="nav-link text-dark" href="#blog">Articulos</a>
+              </li>
+              <li class="nav-item d-flex">
+                <a class="nav-link text-dark" href="#galeria">Imagenes</a>
+              </li>
+              <li class="nav-item d-flex">
+                <a class="nav-link text-dark" href="#contacto">Contacto</a>
+              </li>
+              <li class="nav-item me-2">
+                <a class="btn btn-primary" href="/iniciar-sesion.html">Iniciar sesion</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-success" href="/registro.html">Registrarse</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <!-- portada -->
+        <section class="cover" id="spytop"> 
+            <div class="jumbotron">
+                <h1 class="animated fadeInDownBig animate__animated animate__fadeInUp fw-bold">Recetas De Postres</h1>
+                <p class="animated fadeInRightBig fw-bold text-black">Esto es un ejemplo de landig de recetas para el proyecto integrador</p>
+                <p class="animated fadeInLeftBig fw-bold text-black"><em>Estos articulos son estaticos, así que tenga en cuenta que no son recetas completas, solo una vista previa del contenido!</em></p>
+                <p>
+                <a class="btn btn-lg jumbotron-btn fw-bold animated fadeInUpBig mt-2" role="button">Conoce Mas</a>
+                </p>
+            </div>
+        </section>
+        <!-- final portada -->
+        
+
+         <!-- galeria -->
+
+         <style>
+            
+          .wall_img_1 {width:100%;height:600px;margin:40px auto; transition: all .2s ease-in-out;} 
+          .wall_img_2 {width:100%;height:400px;margin:20px auto; transition: all .2s ease-in-out;} 
+          .wall_img_1:hover,.wall_img_2:hover{filter: grayscale(80%)}
+          .wall_img_1:before,.wall_img_2:before {content: attr(id);opacity:0;transition: all .2s ease-in-out;width:100%;position:absolute;top:40%;text-align:center;display:block;font-size:22px;color:#fff; mix-blend-mode: overlay;}
+          .wall_img_1:hover::before,.wall_img_2:hover::before {content: attr(id);opacity:1;}
+          
+          </style>
+          
+          <div class="container-fluid position-relative overflow-hidden espacios" id="galeria">
+            <div class="row ">
+              <div class="col-md-8 offset-md-2">
+                <div class="lc-block text-center">
+                  <h2 editable="inline" class="display-2 mb-3"><b>Galeria</b></h2>
+                </div><!-- /lc-block -->
+              </div><!-- /col -->
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="row ">
+                  <div class="col-sm-6">
+                    <div class="lc-block">
+                      <div lc-helper="background" class="wall_img_1 rounded" style="background-size: cover; background-position: center; background-image: url('https://t1.rg.ltmcdn.com/es/images/0/4/5/pie_de_durazno_75540_600.jpg');" id="Pie de durazno">
+                      </div>
+                    </div>
+                    <!-- /lc-block -->
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="lc-block ">
+                      <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('https://t2.rg.ltmcdn.com/es/images/1/2/5/malvaviscos_caseros_75521_600.jpg');" id="Malvaviscos caseros">
+                      </div>
+                    </div>
+                    <div class="lc-block ">
+                      <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('https://t2.rg.ltmcdn.com/es/images/4/7/4/chocotorta_en_vaso_75474_600.jpg');" id="Chocotorta en vaso">
+                      </div>
+                    </div>
+                    <!-- /lc-block -->
+                  </div>
+                </div>
+                <!-- /lc-block -->
+              </div><!-- /col -->
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="lc-block">
+                      <div lc-helper="background" class="wall_img_1 rounded" style="background-size: cover; background-position: center; background-image: url('https://t2.rg.ltmcdn.com/es/images/3/4/4/arroz_zambito_75443_600.jpg');" id="Arroz zambito">
+                      </div>
+                    </div>
+                   
+                    <!-- /lc-block -->
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="lc-block ">
+                      <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('https://t2.rg.ltmcdn.com/es/images/1/7/3/helado_vegano_de_coco_75371_600.jpg');" id="Helado de Coco">
+                      </div>
+                    </div>
+                    <div class="lc-block ">
+                      <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('https://t1.rg.ltmcdn.com/es/images/2/7/3/leche_asada_vegana_75372_600.jpg');" id="leche asada Vegana">
+                      </div>
+                    </div>
+                    <!-- /lc-block -->
+                  </div>
+                </div>
+                <!-- /lc-block -->
+              </div><!-- /col -->
+          
+            </div><!-- /col -->
+          </div>
+       
+      <!-- fin galeria -->
+
+      <!-- articulos -->
+        
+      <section class="section gray-bg" id="blog">
+        <div class="container espacios">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <div class="section-title">
+                        <h2>Ultimos Articulos</h2>
+                        <p>Mirá todas las recetas que tenemos para vos. Los mejores postres explicados por los que saben de reposteria.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-grid">
+                        <div class="blog-img">
+                            <div class="date">22 OCT</div>
+                            <a href="#">
+                                <img src="https://cocinerosargentinos.com/content/recipes/500x500/recipes.14698.jpeg" title="" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-info">
+                            <h5><a href="#" class="text-decoration-none">Postre en Fuente</a></h5>
+                            <p>Mirá este tremendo POSTRE EN FUENTE de vainillas con coco 🥥, dulce de leche, merenguitos y frutillas ¡que te va a encantar! 🍓✨.</p>
+                            <div class="btn-bar">
+                                <a href="#">
+                                    <button type="button" class="btn btn-primary">Ver mas</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-grid">
+                        <div class="blog-img">
+                            <div class="date">22 OCT</div>
+                            <a href="#">
+                                <img src="https://cocinerosargentinos.com/content/recipes/500x500/recipes.14443.jpeg" title="" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-info">
+                            <h5><a href="#" class="text-decoration-none">Isla Flotante</a></h5>
+                            <p>¡El postre que tanto pidieron! 👉 ISLA FLOTANTE con caramelo y sambayón 🏝️🍮 seguí el paso a paso a continuación y preparalo en tu casa!</p>
+                            <div class="btn-bar">
+                                <a href="#">
+                                  <button type="button" class="btn btn-primary">Ver mas</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-grid">
+                        <div class="blog-img">
+                            <div class="date">22 OCT</div>
+                            <a href="#">
+                                <img src="https://cocinerosargentinos.com/content/recipes/500x500/recipes.14424.jpeg" title="" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-info">
+                            <h5><a href="#" class="text-decoration-none">Sopa Inglesa con Dulce de Leche</a></h5>
+                            <p>SOPA INGLESA CON DULCE DE LECHE 🙌 no te podés perder este postre increíble con vainillas, crema pastelera y almíbar.</p>
+                            <div class="btn-bar">
+                                <a href="#">
+                                  <button type="button" class="btn btn-primary">Ver mas</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- fin articulos -->
+
+
+        <!-- formulario -->
+        <div class="px-3 my-5 espacios" id="contacto">
+            <h2 class="text-center pb-4 contactate">Contactate con nosotros!</h2>
+          <div class="row justify-content-center">
+            <div class="col-xl-10">
+              <div class="card border-end-0 rounded-3 shadow-lg overflow-hidden">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-sm-6 d-none border-start-0 d-sm-block bg-image"></div>
+                    <div class="col-sm-6 p-4">
+                      <div class="text-center">
+                        <div class="h3 fw-bold">Formulario de Contacto</div>
+                        <p class="mb-4 fst-italic">Ante cualquier inquietud no dudes en contactarnos.</p>
+      
+        
+                        <!-- Name -->
+                        <div class="form-floating mb-3 border border-1 rounded fw-lighter">
+                          <input class="form-control" id="nombre" type="text" placeholder="Nombre" data-sb-validations="required" />
+                          <label for="name">Nombre</label>
+                        </div>
+        
+                        <!-- Email -->
+                        <div class="form-floating mb-3 border border-1 rounded fw-lighter">
+                          <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                          <label for="emailAddress">Correo electronico</label>
+                        </div>
+        
+                        <!-- Message -->
+                        <div class="form-floating mb-3 border border-1 rounded fw-lighter">
+                          <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                          <label for="message">Mensaje</label>
+                        </div>
+        
+                        <!-- Submit button -->
+                        <div class="d-grid">
+                          <button class="btn btn-secondary btn-lg" id="submitButton" type="submit">Enviar</button>
+                        </div>
+                      </form>
+        
+                    </div>
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- fin formulario -->
+
+        <!-- footer -->
+
+        <footer class="bg-dark text-center text-white">
+          <!-- Grid container -->
+          <div class="container p-3 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <h4>Seguinos en las Redes:</h3>
+              
+              <!-- Twitter -->
+              <a href="#" class="icon-button twitter"><i class="bi bi-twitter me-2" style="font-size: 2rem; color: rgb(94, 147, 245);"></i></i><span></span></a>
+        
+              <!-- facebook -->
+              <a href="#" class="icon-button facebook"><i class="bi bi-facebook me-2" style="font-size: 2rem; color: rgb(13, 78, 199);"></i></i><span></span></a>
+
+              <!-- google -->
+              <a href="#" class="icon-button google "><i class="bi bi-google me-2" style="font-size: 2rem; color: rgb(224, 84, 18);"></i></i><span></span></a>
+
+              <!-- linkedin -->
+              <a href="#" class="icon-button linkedin"><i class="bi bi-linkedin" style="font-size: 2rem; color: rgb(5, 18, 42);"></i></i><span></span></a>
+
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            Copyright 2021 ©
+            <a class="text-white" href="https://postres.com/">Postres.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+
+        <!-- fin footer -->
+
+    </main>
+
+  
+  </body>
+</html>
