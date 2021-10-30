@@ -7,12 +7,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    
+    
+    <link rel="stylesheet" href="style-r.css">
     <title>Login | Postres</title>
 </head>
 <body>
-    <header>
-       
-        <h2>Login en progreso :P </h2>
+    
+    <div class="login">
+        <div class="login-triangle" ></div>
+        
+        <h2 class="login-header shadow-lg rounded">Iniciar Sesion</h2>
+      
+        <form class="login-container shadow-lg p-3 mb-3 bg-body">
+          <p><input type="email" placeholder="Email" class="rounded"></p>
+          <p><input type="password" placeholder="Contraseña" class="rounded"></p>
+          <a href="/registro.html" class="text-decoration-none text-center"><p class="text-decoration-none">Registrarse</p></a>
+          <p ><input type="button" value="Iniciar" class="btn btn-dark"></p>
+        </form>
+      </div>
     
 </body>
 </html>
